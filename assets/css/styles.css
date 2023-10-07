@@ -1,7 +1,8 @@
-* {
-    font-family: 'Roboto', sans-serif;
-}
+/* Custom page CSS
+-------------------------------------------------- */
+/* Not required for template or sticky footer method. */
 
-.text-blue {
-    color: #007bff;
-}
+main > .container {
+    padding: 60px 15px 0;
+  }
+  
