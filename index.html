@@ -147,7 +147,7 @@
         <!-- Fixed navbar -->
         <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
           <div class="container-fluid">
-            <a class="navbar-brand" href="#">Fixed navbar</a>
+            <a class="navbar-brand" href="#">BooksUlove</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -160,7 +160,7 @@
                   <a class="nav-link" href="#">Link</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                  <a class="nav-link disabled" aria-disabled="true">News letter</a>
                 </li>
               </ul>
               <form class="d-flex" role="search">
@@ -175,7 +175,46 @@
     <!-- inicia el main class-->
     <main class="flex-shrink-0">
         <div class="container">
-          <h1 class="mt-5">Aqui escribiremos nuestro codigo</h1>
+          <h3 class="mt-5" >Aqui escribiremos nuestro codigo</h3>
+          <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>Libros de interes - Te encuentras en el mejor repositorio del mundo!</h1>
+                </div>
+                <div class="col-md-12 mt-4">
+                    <h3 class="text-primary">Agregar Libro</h3>
+                    <div class="mb-3">
+                        <label for="inputTitulo" class="form-label">Titulo</label>
+                        <input type="text" class="form-control" id="inputTitulo">
+                    </div>
+                    <div class="row">
+                        <div class="mb-3 col-sm-6">
+                            <label for="inputEdicion" class="form-label">Año edición</label>
+                            <input type="text" class="form-control" id="inputEstreno">
+                        </div>
+                        <div class="mb-3 col-sm-6">
+                            <label for="inputArea" class="form-label">Area de Interes</label>
+                            <input type="text" class="form-control" id="inputGenero">
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="inputResumen" class="form-label">Resumen</label>
+                        <textarea class="form-control" id="inputSinopsis" rows="3"></textarea>
+                    </div>
+                    <div class="mb-3">
+                      <label for="inputImagen" class="form-label">URL Imagen</label>
+                      <input type="text" class="form-control" id="inputImagen">
+                  </div>
+                    <div class="d-grid gap-2">
+                        <button class="btn btn-primary" type="button" id="btnAgregar">Guardar</button>
+                        <button class="btn btn-danger" type="button" id="btnBorrarTodo">Borrar todo</button>
+                    </div>
+                </div>
+                <div class="col-md-12 mt-4" id="divPeliculas">
+                    <!-- no hay nada aqui  👀-->
+                </div>
+            </div>
+        </div>
   
         </div>
     </main>
@@ -183,13 +222,28 @@
     <!--  inicia el footer -->
     <footer class="footer mt-auto py-3 bg-body-tertiary">
         <div class="container">
-          <span class="text-body-secondary">Place sticky footer content here.</span>
+          <span class="text-body-secondary" style="position: center;">
+            <div><h6> La lectura es la mejor amiga el hombre!!</h6></div>
+            <div><h6> Si NO Leo me ABURRO!!!!!!!</h6></div>
+            
+          </span>
         </div>
+        <footer class="py-0 my-0">
+          <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item"><a href="#" class="nav-link px-1 text-body-secondary">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-1 text-body-secondary">Features</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-1 text-body-secondary">Pricing</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-1 text-body-secondary">FAQs</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-1 text-body-secondary">About BooksUlove</a></li>
+          </ul>
+          <p class="text-center text-body-secondary">© 2023 BooksUlove, Inc.</p>
+        </footer>
     </footer>
     <!--  termina el footer-->
     <!--<img src="assets/images/logo-top-ucamp.png" alt="logo">-->
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="assets/js/color-modes.js"></script>
     <script src="assets/js/index.js"></script>
     
 </body>
