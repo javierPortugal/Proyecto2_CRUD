@@ -1,21 +1,97 @@
 
 Exploring Raspberry Pi
 
-https://books.google.com.mx/books/publisher/content?id=ro0gCwAAQBAJ&pg=PP1&img=1&zoom=3&hl=en&bul=1&sig=ACfU3U1qPzMODI7mxT2WHSbMKqpm8GNbOg&w=1280
+2015
 
-2010
+programming
+microcomputer
+
+Exploring Raspberry Pi is the innovators guide to bringing Raspberry Pi to life. This book favors engineering principles over a 'recipe' approach to give you the skills you need to design and build your own projects. You'll understand the fundamental principles in a way that transfers to any type of electronics, electronic modules, or external peripherals, using a "learning by doing" approach that caters to both beginners and experts. The book begins with basic Linux and programming skills, and helps you stock your inventory with common parts and supplies. Next, you'll learn how to make parts work together to achieve the goals of your project, no matter what type of components you use. The companion website provides a full repository that structures all of the code and scripts, along with links to video tutorials and supplementary content that takes you deeper into your project.
 
 
+http://exploringrpi.com/wp-content/uploads/2016/05/Front-Cover-Medium-1.jpg
+
+
+**********************************************************************
 
 
 Building Embedded Systems
 
-https://books.google.com.mx/books/publisher/content?id=wFlBDAAAQBAJ&pg=PP1&img=1&zoom=3&hl=en&bul=1&sig=ACfU3U2BwTObTNluWSfOTj4CXDFHqYO88A&w=1280
+2016
 
-2017
+programming
+
+Develop the software and hardware you never think about. We're talking about the nitty-gritty behind the buttons on your microwave, inside your thermostat, inside the keyboard used to type this description, and even running the monitor on which you are reading it now. Such stuff is termed embedded systems, and this book shows how to design and develop embedded systems at a professional level. Because yes, many people quietly make a successful career doing just that.
+
+Building embedded systems can be both fun and intimidating. Putting together an embedded system requires skill sets from multiple engineering disciplines, from software and hardware in particular. Building Embedded Systems is a book about helping you do things in the right way from the beginning of your first project:
+
+Programmers who know software will learn what they need to know about hardware.
+
+Engineers with hardware knowledge likewise will learn about the software side.
+
+
+https://learning.oreilly.com/library/cover/9781484219195/250w/
+
+
+*************************************************************************************
+
+Embedded Systems and Software Validation
+
+2009
+
+programming
+
+
+Modern embedded systems require high performance, low cost and low power consumption. Such systems typically consist of a heterogeneous collection of processors, specialized memory subsystems, and partially programmable or fixed-function components. This heterogeneity, coupled with issues such as hardware/software partitioning, mapping, scheduling, etc., leads to a large number of design possibilities, making performance debugging and validation of such systems a difficult problem.
+
+Embedded systems are used to control safety critical applications such as flight control, automotive electronics and healthcare monitoring. Clearly, developing reliable software/systems for such applications is of utmost importance. This book describes a host of debugging and verification methods which can help to achieve this goal.
+
+Covers the major abstraction levels of embedded systems design, starting from software analysis and micro-architectural modeling, to modeling of resource sharing and communication at the system level
+Integrates formal techniques of validation for hardware/software with debugging and validation of embedded system design flows
+Includes practical case studies to answer the questions: does a design meet its requirements, if not, then which parts of the system are responsible for the violation, and once they are identified, then how should the design be suitably modified?
 
 
 
+https://learning.oreilly.com/library/cover/9780080921259/250w/
+
+
+************************************************************************************
+Learn to Program with JavaScript
+
+2022
+
+programming
+
+
+
+Learn JavaScript, the World's Most Popular Programming Language, In a Hands-On and Engaging Way!
+
+JavaScript is used by a staggering amount of large and medium sized companies, largely due to its simplicity, flexibility, and popularity. The career opportunities for JavaScript developers are enormous. JavaScript is a fantastic language to learn to start your programming career.
+
+In this course, Shaun Wassell covers everything you need to develop a solid foundation in programming with JavaScript. He demonstrates how to think like a programmer along with basic syntax and programming techniques. Youll start off by learning the basics, such as basic syntax and program structure, and simple operations. From there, youll get into the basics of Object-Oriented programming in JavaScript and move onto more specific topics such as making network requests, handling events and errors, and building user interfaces.
+
+
+https://learning.oreilly.com/library/cover/9780137560387/250w/
+
+
+
+***************************************************************************
+Hands-On Projects with HTML, CSS, and JavaScript
+
+2023
+
+programming
+
+Building modern websites requires a solid foundation in HTML, CSS, and JavaScript. In this comprehensive course, you will embark on an exciting journey of learning these core web technologies to create visually stunning and highly functional websites.
+
+The course starts with an easy-to-follow tutorial on setting up Visual Studio Code and its essential extensions. Then, you will dive into the projects, starting with the HTML part and gradually moving on to CSS and JavaScript. Each project is built entirely from scratch, without any copied and pasted code.
+
+Throughout the course, you will create modern, super cool, and responsive websites. You will delve into event handling, DOM manipulation, and asynchronous programming. With this knowledge, you will be able to create dynamic content, handle user interactions, and build engaging web experiences. You will also work on a series of hands-on projects that reinforce your learning and allow you to apply the concepts in real-world scenarios. From creating a loading bar and image slider to building a clock and implementing a Q&A section, each section can be treated as a separate project, expanding your skills and understanding.
+
+https://learning.oreilly.com/library/cover/9781835087725/250w/
+
+
+************************************************************************
 Microcontrolador STM32 Programación y desarrollo
 
 https://books.google.com.mx/books/publisher/content?id=46e6EAAAQBAJ&pg=PA1&img=1&zoom=3&hl=en&bul=1&sig=ACfU3U2pz6NukWqIohrgIm5mCdrtSCZi8A&w=1280
