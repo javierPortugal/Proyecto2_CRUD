@@ -78,9 +78,28 @@ function borrarTodo(){
     libros = [];
     mostrarLibros();
     alert("Se borraron los libros");
-    
+
 
 }
+
+function eliminarLibro(index) {
+    console.log(index);
+    libros.splice(index, 1);
+    localStorage.setItem("libros", JSON.stringify(libros));
+    mostrarLibros();
+    alert("Libro eliminado");
+}
+
+function editarLibro(index) {
+    indexEditar = index;
+    let libroAEditar = libros[index];
+    inputTitulo.value = libroAEditar.titulo;
+    inputEdicion.value = libroAEditar.edicion;
+    inputArea.value = libroAEditar.area;
+    inputImagen.value = libroAEditar.imagen;
+    inputResumen.value = libroAEditar.resumen;
+}
+
 
 
 function mostrarLibros() {
