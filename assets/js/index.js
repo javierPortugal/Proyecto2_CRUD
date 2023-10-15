@@ -58,10 +58,20 @@ function guardarLibro(){
     if(indexEditar== null){
         console.log("agregar libro POR NULL");
         libros.push(libro);
-
     }else{
         console.log("editar libro");
+        libros[indexEditar]=libro;
+        indexEditar = null;
     }
+
+/*
+    inputTitulo.value = "";
+    inputEdicion.value = "";
+    inputArea.value = "";
+    inputResumen.value = "";
+    inputImagen.value = "";
+*/
+    limpiarFormularioLibros();
 
     localStorage.setItem("libros", JSON.stringify(libros));
     console.log("Entro a FUNCION guardar libro");
@@ -88,6 +98,8 @@ function eliminarLibro(index) {
     localStorage.setItem("libros", JSON.stringify(libros));
     mostrarLibros();
     alert("Libro eliminado");
+
+    console.log("entro a eliminar libro: " + index)
 }
 
 function editarLibro(index) {
@@ -98,6 +110,11 @@ function editarLibro(index) {
     inputArea.value = libroAEditar.area;
     inputImagen.value = libroAEditar.imagen;
     inputResumen.value = libroAEditar.resumen;
+    indexEditar = index;
+
+    console.log("entro a editar libro: " + index)
+    
+
 }
 
 
@@ -139,6 +156,13 @@ function mostrarLibros() {
     }
 }
 
+function limpiarFormularioLibros(){
+    inputTitulo.value = "";
+    inputEdicion.value = "";
+    inputArea.value = "";
+    inputResumen.value = "";
+    inputImagen.value = "";
+}
 
 //**** Event Listener */
 //*******             */
