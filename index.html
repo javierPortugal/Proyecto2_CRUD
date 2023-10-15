@@ -175,16 +175,16 @@
     <!-- inicia el main class-->
     <main class="flex-shrink-0">
         <div class="container">
-          <h3 class="mt-5" >Aqui escribiremos nuestro codigo</h3>
+          <h1 class="mt-5 display-1" style="text-align: center;">BooksUlove !!!</h1>
           <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <h1>Libros de interes - Te encuentras en el mejor repositorio del mundo!</h1>
+                    <h3>Libros de interés - Te encuentras en el mejor repositorio de libros técnicos del mundo!</h3>
                 </div>
-                <div class="col-md-12 mt-4">
+                <div class="col-md-6 mt-4">
                     <h3 class="text-primary">Agregar Libro</h3>
                     <div class="mb-3">
-                        <label for="inputTitulo" class="form-label">Titulo</label>
+                        <label for="inputTitulo" class="form-label">Título</label>
                         <input type="text" class="form-control" id="inputTitulo">
                     </div>
                     <div class="row">
@@ -193,7 +193,7 @@
                             <input type="text" class="form-control" id="inputEstreno">
                         </div>
                         <div class="mb-3 col-sm-6">
-                            <label for="inputArea" class="form-label">Area de Interes</label>
+                            <label for="inputArea" class="form-label">Area de Interés</label>
                             <input type="text" class="form-control" id="inputGenero">
                         </div>
                     </div>
@@ -210,6 +210,9 @@
                         <button class="btn btn-danger" type="button" id="btnBorrarTodo">Borrar todo</button>
                     </div>
                 </div>
+                <div class="col-md-6 mt-4" >
+                  <h3 class="text-primary">Para indicar la posicion de la figura</h3>
+                </div>
                 <div class="col-md-12 mt-4" id="divPeliculas">
                     <!-- no hay nada aqui  👀-->
                 </div>
@@ -223,18 +226,26 @@
     <footer class="footer mt-auto py-3 bg-body-tertiary">
         <div class="container">
           <span class="text-body-secondary" style="position: center;">
-            <div><h6> La lectura es la mejor amiga el hombre!!</h6></div>
-            <div><h6> Si NO Leo me ABURRO!!!!!!!</h6></div>
+            <div class="row">
+              <div class="col-md-6" style="position: center;" id="msg-left">
+                <h6> "Escribe algo que merezca la pena o lee algo que merezca la pena". Benjamin Franklin.</h6>
+              </div>
+              <div class="col-md-6" style="position: center;" id="msg-right">
+                <h6> "       Si NO leo me ABURRO      !!!!!!!                           ". .....Anónimo.</h6>
+              </div>
+            </div>
+            
+            
             
           </span>
         </div>
         <footer class="py-0 my-0">
           <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-            <li class="nav-item"><a href="#" class="nav-link px-1 text-body-secondary">Home</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-1 text-body-secondary">Features</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-1 text-body-secondary">Pricing</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-1 text-body-secondary">FAQs</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-1 text-body-secondary">About BooksUlove</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-1 text-body-primary">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-1 text-body-primary">Features</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-1 text-body-primary">Pricing</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-1 text-body-primary">FAQs</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-1 text-body-primary">About BooksUlove</a></li>
           </ul>
           <p class="text-center text-body-secondary">© 2023 BooksUlove, Inc.</p>
         </footer>
