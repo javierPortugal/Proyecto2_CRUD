@@ -33,6 +33,37 @@ class Libro{
         this.resumen = resumen;
     }
 }
+//*********  Alertas */
+
+function alertGuardarLibro(){
+    Swal.fire({
+        position: 'top-end',
+        icon: 'success',
+        title: 'El libro se ha guardado',
+        showConfirmButton: false,
+        timer: 2000
+      });
+}
+
+function alertEliminarLibro(){
+    Swal.fire({
+        position: 'top-end',
+        icon: 'error',
+        title: 'El libro se ha eliminado',
+        showConfirmButton: false,
+        timer: 2000
+      });
+}
+
+function alertFormularioVacio(){
+    Swal.fire({
+        position: 'top-end',
+        icon: 'error',
+        title: 'No se puede guardar, los campos se encuentran vacíos!',
+        showConfirmButton: false,
+        timer: 2000
+      });
+}
 
 
 //******         */
@@ -51,19 +82,28 @@ function guardarLibro(){
         imagen,
         resumen
     ) ;
+
+   
    /* console.log(titulo,edicion,area,imagen,resumen);*/
 
     console.log(libro);
-
-    if(indexEditar== null){
-        console.log("agregar libro POR NULL");
-        libros.push(libro);
+    if (libro.titulo =="" & libro.edicion =="" & libro.area == "" & libro.imagen == "" & libro.resumen ==""){
+        alertFormularioVacio();
     }else{
-        console.log("editar libro");
-        libros[indexEditar]=libro;
-        indexEditar = null;
-    }
 
+        if (libro.imagen == ""){
+            libro.imagen = "assets/images/question.png"
+            console.log("se asigno libro.imagen a la foto");
+        }
+
+        if(indexEditar== null){
+            console.log("agregar libro POR NULL");
+             libros.push(libro);
+         }else{
+             console.log("editar libro");
+             libros[indexEditar]=libro;
+            indexEditar = null;
+        }
 /*
     inputTitulo.value = "";
     inputEdicion.value = "";
@@ -71,23 +111,48 @@ function guardarLibro(){
     inputResumen.value = "";
     inputImagen.value = "";
 */
-    limpiarFormularioLibros();
+        limpiarFormularioLibros();
 
-    localStorage.setItem("libros", JSON.stringify(libros));
-    console.log("Entro a FUNCION guardar libro");
+        localStorage.setItem("libros", JSON.stringify(libros));
+        console.log("Entro a FUNCION guardar libro");
+        mostrarLibros();
+        alertGuardarLibro();
+    }
 
-    mostrarLibros();
     
-
 
 }
 
 function borrarTodo(){
     console.log("Entro a borrar todo");
-    localStorage.clear();
-    libros = [];
+    Swal.fire({
+        title: '¿Estas seguro deseas borrar todo?',
+        text: "No será posible recuperar los datos!!",
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'Si, Borralo!'
+      }).then((result) => {
+        if (result.isConfirmed) {
+          localStorage.clear();
+          libros = [];
+          mostrarLibros();
+          Swal.fire(
+            'Borrado!',
+            'La información ha sido eliminada definitivamente!!.',
+            'success'
+          )
+        }else{
+            Swal.fire(
+                'Cancelado!',
+                'La acción no se ha ejecutado!!.',
+                'info'
+              )
+        }
+      })
+    
     mostrarLibros();
-    alert("Se borraron los libros");
 
 
 }
@@ -97,7 +162,7 @@ function eliminarLibro(index) {
     libros.splice(index, 1);
     localStorage.setItem("libros", JSON.stringify(libros));
     mostrarLibros();
-    alert("Libro eliminado");
+    alertEliminarLibro();
 
     console.log("entro a eliminar libro: " + index)
 }
@@ -114,7 +179,6 @@ function editarLibro(index) {
 
     console.log("entro a editar libro: " + index)
     
-
 }
 
 
